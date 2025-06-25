@@ -1,6 +1,6 @@
 class Dog :
 
-    def __init__(self, name):
+    def __init__(self, name, race):
         self.name = name
         print(name)
 
@@ -11,10 +11,19 @@ class Dog :
         print("bark")
 
 
+class HowManyDogs :
+    def __init__(self):
+        self.NumOfDogs = []
 
-d = Dog("tim")
-d2 = Dog("bill")
-d.bark()
-print (type(d))
+    def Count(self,dog):
+        self.NumOfDogs.append(dog)
+d = Dog("tim", "first")
+d2 = Dog("bill", "second")
 
-print (d.meow(5))
+a1 = HowManyDogs ()
+a1.Count(d)
+a1.Count(d2)
+print(a1.NumOfDogs[0].name)
+
+
+
