@@ -17,7 +17,7 @@ def rps_game_winner(list):
         if move not in {"R", "P", "S"}:
             raise NoSuchStrategyError
 
-    (player1, move1), (player2, move2) = newdict.items()
+    (player1, move1), (player2, move2) = newdict.items() # i added this because from what i understand the player name can be changed 
 
     if move1 == move2:
         return f"{player1} {move1}"
@@ -26,10 +26,9 @@ def rps_game_winner(list):
     else:
         return f"{player2} {move2}"
 
-print(rps_game_winner([['player1', 'P'], ['player2', 'S'], ['player3', 'S']]))
 
-print(rps_game_winner([['player1', 'P'], ['player2', 'A']]))
+
 
 print(rps_game_winner([['player1', 'P'], ['player2', 'S']]))
 
-print(rps_game_winner([['player1', 'P'], ['player2', 'P']]))
+print(rps_game_winner([['ss', 'P'], ['hh', 'P']]))
