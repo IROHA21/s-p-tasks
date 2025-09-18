@@ -1,3 +1,4 @@
+
 def combine_anagrams(moon) :
     result = []
     used = set()
