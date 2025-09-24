@@ -21,15 +21,22 @@ class Dessert:
     def is_delicious(self):
         return True
 
-
+class JellyBean(Dessert):
+    def __init__(self, name, calories, flavor = None):
+        super().__init__(name, calories)
+        self._flavor = flavor
+    def get_flavor(self):
+        return self._flavor
+    def set_flavor(self, flavor):
+        self._flavor = flavor
+    def is_delicious(self):
+        if self.get_flavor() == "black licorice": return False
+        else: return True
 
 
 # Test
-num1 = Dessert("strawberryCake", 150)
-num2 = Dessert("OrangeCake", 250)
-print(num1.is_healthy())
-print(num1.is_delicious())
-print(num2.is_healthy())
-print(num2.is_delicious())
 
 
+num3 = JellyBean("strawberry", 300, "black licorice")
+print(num3.is_healthy())
+print(num3.is_delicious())
