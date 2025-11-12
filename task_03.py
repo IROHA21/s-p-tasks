@@ -15,6 +15,9 @@ def max_odd(array):
                 max_num = i
 
     return max_num
+
+
+
 print(max_odd([1, 2, 3, 4, 4]))                  # => 3
 print(max_odd([21.0, 2, 3, 4, 4])    )           # => 21
 print(max_odd(['ololo', 2, 3, 4, [1, 2], None])) # => 3
