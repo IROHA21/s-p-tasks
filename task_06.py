@@ -31,4 +31,4 @@ def rps_game_winner(list):
 
 print(rps_game_winner([['player1', 'P'], ['player2', 'S']]))
 
-print(rps_game_winner([['ss', 'P'], ['hh', 'P']]))
+print(rps_game_winner([['player1', 'P'], ['player2', 'P']]))

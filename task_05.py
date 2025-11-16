@@ -7,7 +7,7 @@ def date_in_future(integer):
     current_timestamp = int(time.time())
 
     if not integer:
-        return time.strftime("%d-%m-%Y %H:%M:%S", time.localtime(current_timestamp))
+        return time.strftime("%d-%m-%Y %H:%M:%S")
 
     future_timestamp = current_timestamp + (integer * 86400)
     return time.strftime("%d-%m-%Y %H:%M:%S", time.localtime(future_timestamp))

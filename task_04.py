@@ -9,12 +9,12 @@ def sort_list(list):
 
 
     for i in range(len(list)) :
+
         if list[i] == minimum :
             list[i] = maximum
-            continue
-        if list[i] == maximum:
+        elif list[i] == maximum:
             list[i] = minimum
-            #no need to skip itteration here
+           
 
 
 
